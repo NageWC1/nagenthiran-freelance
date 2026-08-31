@@ -39,6 +39,15 @@ Defined in `posts/websites.html` at £10 / £20 / £35 per month. Operational ca
 
 - Not yet operationally scoped — no defined delivery/publishing workflow (e.g., Play Store/App Store submission process, who holds the developer account, how updates get pushed post-launch). Flag as a TODO before the first real app client, since "help publishing to Play Store / App Store" is promised on the flyer.
 
+## Custom AI Tools & Automation
+
+Defined in `posts/ai-tools-automation.html` at Simple AI Tool from £150, AI Chat Assistant from £250, Workflow Automation custom quote.
+
+- **AI usage costs are the client's, passed through at cost, not absorbed into the build price.** These tools call a paid LLM API on an ongoing basis — unlike every other service in this lineup, the cost doesn't stop at delivery. The flyer states this explicitly ("AI usage billed separately, at cost — no markup") so it isn't a surprise after handoff.
+- **Not yet decided how the pass-through actually works mechanically** — options: (a) client gets their own Anthropic/OpenAI API key and bills to their own card, tool just uses it — simplest, no ongoing admin for the user; (b) user's own API key, tracks usage per client, invoices monthly — more admin, but a smoother client experience (one less account for them to set up). See Open Decisions.
+- **Delivery:** same private-repo model as Websites — client gets the source code, no lock-in, consistent with every other build-based service here.
+- **Scoping call is mandatory before quoting**, more so than any other service — "automate this" can mean a 2-hour build or a multi-week integration, and the difference isn't visible from a one-line client request the way "I need a 5-page site" is.
+
 ## CV / Résumé / LinkedIn
 
 - Delivered as PDF + editable file. 2–3 day turnaround, 2 rounds of free revisions, as stated on the flyer. No operational gaps identified yet — this is the simplest service to fulfill (no hosting/infra involved).
@@ -56,3 +65,4 @@ Not yet formalized. Worth having a short intake step before quoting anything, so
 - **Payment/currency method** — UK→Sri Lanka transfers not yet decided. Wise/Revolut are the obvious candidates (carried over from `freelance-monetization.md`).
 - **Edit-tracking for Care Plans** — need a lightweight way (shared note, spreadsheet, or just a per-client WhatsApp thread) to track how many included edits a Standard/Priority client has used in a given month, so it doesn't quietly become unlimited free work.
 - **Mobile/desktop app delivery workflow** — see above.
+- **AI usage cost pass-through mechanism** — client's own API key vs. user's key + monthly invoicing. See Custom AI Tools & Automation above.

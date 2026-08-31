@@ -12,7 +12,8 @@ Private tracker for freelance/skill-monetization work — pricing, positioning, 
   - `mobile-desktop-apps` — Android/iOS/cross-platform/desktop apps, app store submission handling
   - `documents-presentations` — slide decks, reports, AI content humanizing, proofreading/editing
   - `ai-content-humanizing` — standalone flyer for the AI-content-humanizing service, scoped to business/professional writing only
+  - `ai-tools-automation` — custom AI-powered tools/automations built for a client's specific repetitive task (not a chatbot demo)
 
 ## Status
 
-Started 2026-08-30. All 5 flyers drafted and rendered. See `freelance-monetization.md` → Status for the detailed log.
+Started 2026-08-30. All 6 flyers drafted and rendered. See `freelance-monetization.md` → Status for the detailed log.

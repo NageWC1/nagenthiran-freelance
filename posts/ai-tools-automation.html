@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom AI Tools & Automation — Nagenthiran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a192f;
+    --bg-secondary: #112240;
+    --bg-card: #1d2d50;
+    --accent: #64ffda;
+    --accent-dark: #43d9b6;
+    --text-main: #ccd6f6;
+    --text-dim: #a8b2d1;
+    --font-main: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 210mm; height: 297mm;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  body {
+    font-family: var(--font-main);
+    background: linear-gradient(160deg, var(--bg-primary) 0%, #0d1f38 55%, var(--bg-secondary) 100%);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    padding: 14mm 17mm 12mm;
+    position: relative;
+    overflow: hidden;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: -40mm; right: -45mm;
+    width: 110mm; height: 110mm;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,255,218,0.16) 0%, rgba(100,255,218,0) 70%);
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    bottom: -45mm; left: -40mm;
+    width: 100mm; height: 100mm;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,255,218,0.10) 0%, rgba(100,255,218,0) 70%);
+  }
+
+  .brand { display: flex; flex-direction: column; align-items: center; gap: 9px; text-align: center; z-index: 1; }
+  .brand-name { font-family: var(--font-mono); font-size: 18px; letter-spacing: 1.5px; color: var(--text-main); font-weight: 600; }
+  .brand-name span { color: var(--accent); }
+  .brand-tag { font-family: var(--font-mono); font-size: 11px; color: var(--accent); border: 1px solid rgba(100,255,218,0.45); padding: 5px 12px; border-radius: 20px; letter-spacing: 0.5px; }
+
+  .hero { margin-top: 7mm; z-index: 1; text-align: center; }
+  .hero-eyebrow { font-family: var(--font-mono); font-size: 13px; color: var(--accent); letter-spacing: 2px; margin-bottom: 9px; }
+  .hero h1 { font-size: 33px; line-height: 1.16; font-weight: 800; color: #fff; letter-spacing: -0.5px; max-width: 155mm; margin: 0 auto; }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p { margin: 11px auto 0; font-size: 14.5px; color: var(--text-dim); line-height: 1.5; max-width: 145mm; }
+
+  .section-title { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+
+  .build { margin-top: 7mm; z-index: 1; }
+  .build-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 9px; max-width: 176mm; margin: 0 auto; }
+  .build-card {
+    background: rgba(29,45,80,0.6);
+    border: 1px solid rgba(100,255,218,0.18);
+    border-radius: 11px;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .build-icon { width: 24px; height: 24px; margin: 0 auto 6px; color: var(--accent); }
+  .build-icon svg { width: 100%; height: 100%; display: block; }
+  .build-label { font-size: 12.5px; font-weight: 600; color: #fff; line-height: 1.3; }
+
+  .pricing { margin-top: 7mm; z-index: 1; }
+  .price-row {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: rgba(29,45,80,0.65);
+    border: 1px solid rgba(100,255,218,0.18);
+    border-radius: 12px;
+    padding: 10px 18px;
+    margin-bottom: 9px;
+  }
+  .price-row.featured { border-color: var(--accent); background: rgba(100,255,218,0.08); }
+  .price-name { font-size: 15.5px; font-weight: 600; color: #fff; }
+  .price-sub { font-size: 12.5px; color: var(--text-dim); margin-top: 3px; }
+  .price-value { font-family: var(--font-mono); font-size: 19px; font-weight: 600; color: var(--accent); white-space: nowrap; margin-top: 6px; }
+  .price-badge {
+    font-family: var(--font-mono); font-size: 9.5px; color: var(--bg-primary);
+    background: var(--accent); border-radius: 20px; padding: 3px 9px;
+    font-weight: 600; letter-spacing: 0.5px; margin-left: 10px;
+  }
+
+  .includes { margin-top: 7mm; z-index: 1; }
+  .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 16px; max-width: 165mm; margin: 0 auto; }
+  .includes-item { display: flex; align-items: center; justify-content: center; text-align: center; gap: 7px; font-size: 13.5px; color: var(--text-main); line-height: 1.35; }
+  .includes-item .check { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+  .spacer { flex: 1; min-height: 6mm; }
+
+  .cta {
+    z-index: 1;
+    background: var(--bg-card);
+    border: 1px solid rgba(100,255,218,0.28);
+    border-radius: 16px;
+    padding: 10mm 14mm;
+    text-align: center;
+    margin-top: 7mm;
+  }
+  .cta-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+  .cta-sub { font-size: 13px; color: var(--text-dim); margin-bottom: 13px; }
+  .cta-button {
+    display: inline-flex; align-items: center; gap: 9px;
+    background: var(--accent); color: var(--bg-primary);
+    font-weight: 700; font-size: 15.5px;
+    padding: 12px 25px; border-radius: 30px;
+    font-family: var(--font-main);
+  }
+  .cta-button svg { width: 18px; height: 18px; }
+  .cta-note { margin-top: 11px; font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim); }
+
+  .footer {
+    z-index: 1;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 6mm;
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim);
+  }
+  .footer .dot { color: var(--accent); margin: 0 6px; }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <div class="brand-name">NAGENTHIRAN<span>.</span></div>
+    <div class="brand-tag">TAKING NEW CLIENTS</div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-eyebrow">CUSTOM AI TOOLS &amp; AUTOMATION</div>
+    <h1>Hand the <span class="accent">repetitive part</span> to AI.</h1>
+    <p>I build small, working AI-powered tools around a specific task you do over and over — drafting replies, summarizing feedback, answering customer questions, writing product descriptions. Not a chatbot demo — a tool that actually does the job.</p>
+  </div>
+
+  <div class="build">
+    <div class="section-title">What I build</div>
+    <div class="build-grid">
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div><div class="build-label">Auto-Draft &amp; Reply Tools</div></div>
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="build-label">Website AI Chat Assistants</div></div>
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="build-label">Feedback &amp; Review Summarizers</div></div>
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><div class="build-label">Product/Content Description Generators</div></div>
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div class="build-label">Internal Document Search</div></div>
+      <div class="build-card"><div class="build-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div class="build-label">Data &amp; Insight Reports</div></div>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div class="section-title">Pricing</div>
+
+    <div class="price-row">
+      <div>
+        <div class="price-name">Simple AI Tool</div>
+        <div class="price-sub">One core AI feature — e.g. generate descriptions, summarize feedback</div>
+      </div>
+      <div class="price-value">from £150</div>
+    </div>
+
+    <div class="price-row featured">
+      <div>
+        <div class="price-name">AI Chat Assistant <span class="price-badge">MOST POPULAR</span></div>
+        <div class="price-sub">Trained on your content, answers customer questions on your site</div>
+      </div>
+      <div class="price-value">from £250</div>
+    </div>
+
+    <div class="price-row">
+      <div>
+        <div class="price-name">Workflow Automation</div>
+        <div class="price-sub">Multi-step — draft, categorize, route — quoted after a call</div>
+      </div>
+      <div class="price-value">custom</div>
+    </div>
+  </div>
+
+  <div class="includes">
+    <div class="section-title">What's included</div>
+    <div class="includes-grid">
+      <div class="includes-item"><span class="check">✓</span> Quick call first to scope the real problem</div>
+      <div class="includes-item"><span class="check">✓</span> Built and tested on your real data</div>
+      <div class="includes-item"><span class="check">✓</span> Clear guide on how to use &amp; maintain it</div>
+      <div class="includes-item"><span class="check">✓</span> Full source code, no lock-in</div>
+      <div class="includes-item"><span class="check">✓</span> 2 rounds of free revisions</div>
+      <div class="includes-item"><span class="check">✓</span> AI usage billed separately, at cost — no markup</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="cta">
+    <div class="cta-title">Got a repetitive task eating your time?</div>
+    <div class="cta-sub">Message me on WhatsApp — let's see if AI can handle it</div>
+    <div class="cta-button">
+      <svg viewBox="0 0 24 24" fill="#0a192f"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38c1.45.79 3.08 1.21 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.94 6.45 17.5 2 12.04 2zm0 18.1h-.01c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.02 8.02 0 01-1.24-4.32c0-4.46 3.63-8.09 8.1-8.09 2.16 0 4.19.84 5.72 2.37a8.03 8.03 0 012.37 5.72c0 4.47-3.63 8.09-8.1 8.09z"/></svg>
+      +94 76 327 5565
+    </div>
+    <div class="cta-note">See real projects at nagenthiran.com</div>
+  </div>
+
+  <div class="footer">
+    <div>nagenthiran.com</div>
+    <div><span class="dot">●</span>Web · Mobile · Docs</div>
+  </div>
+
+</body>
+</html>

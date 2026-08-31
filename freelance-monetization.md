@@ -34,6 +34,9 @@ Everything below is fine to promote publicly, on the site or via WhatsApp, no re
 | Website Care Plan — Priority | £35/mo | + up to 5 edits/month, 48hr turnaround |
 | Domain & Hosting Setup (standalone) | £15 one-time | New, added 2026-08-31 — for an existing site that just needs pointing/configuring, no build required |
 | App Store / Play Store Submission Handling | from £30/platform | New, added 2026-08-31 — for an already-built app, client holds their own developer account |
+| Simple AI Tool | from £150 | New, added 2026-08-31 — one core AI feature (e.g. generate descriptions, summarize feedback) |
+| AI Chat Assistant | from £250 | Trained on the client's own content, answers customer questions on their site |
+| Workflow Automation (AI) | custom quote | Multi-step (draft, categorize, route), quoted after a scoping call |
 
 Payment/currency method for UK→Sri Lanka transfers not yet decided — Wise/Revolut are the obvious candidates, needs a decision before the first real order.
 
@@ -86,6 +89,18 @@ Both rendered single-page, verified visually.
 ### Icons — 2026-08-31
 User asked to replace the emoji icons across all posts (build-grid cards) with "standard icons" — emoji rendering isn't reliable across fonts/platforms (already caught 🪄 failing to render in headless Chrome, see above). Swapped all 26 emoji icons across `posts/websites.html`, `posts/mobile-desktop-apps.html`, `posts/documents-presentations.html`, and `posts/ai-content-humanizing.html` for hand-written inline SVG line-icons (Feather-icon style: 24×24 viewBox, `stroke="currentColor"`, teal accent color) — same approach already used for the WhatsApp icon in every CTA button. No external icon font/library dependency, so nothing to fail to load at render time. Verified visually on all 4 files — every icon renders correctly, still single-page on each.
 
+### Repo move — 2026-08-31
+This entire track moved out of the mixed-purpose product-ideas repo into its own repo: `github.com/NageWC1/nagenthiran-freelance` (private). `README.md` and `CLAUDE.md` added at the repo root for orientation — `CLAUDE.md` specifically documents the flyer design conventions (palette, SVG icon rule, page-fit-check workflow) and the pricing philosophy so future sessions don't have to re-derive them from this file's history.
+
+### Custom AI Tools & Automation — 2026-08-31 (6th post)
+User asked for more AI-related service ideas specifically filtered through "does AI make me differentiated, not just trendy." Researched four candidates:
+- **Custom AI-powered tools for clients** — strongest fit. AI-related freelance demand up 109% YoY on Upwork; Claude Code/Cowork-style tool-building demand "exploded" because it lets small businesses get internal tools built in a sprint instead of sitting on a wishlist for months ([source](https://medium.com/the-ai-studio/ai-services-that-sell-best-on-fiverr-upwork-and-freelancer-in-2026-9efe1a415902)). This is a direct reuse of the user's own product-building work (Ink-Out Notebook, DiffCheck, RepoAtlas, StreamScore) repointed at a client's specific problem — a genuine differentiator, not just "AI is trendy."
+- **AI chatbot/automation setup** — reconfirmed from the earlier research pass (highest fees, least competition relative to demand). Folded into this same post as the "AI Chat Assistant" tier rather than a 7th separate flyer.
+- **AI branding kits — explicitly NOT recommended as a flagship offer.** 60%+ of new small businesses already use AI tools to self-serve a logo/brand kit for $20–100 ([Superside](https://www.superside.com/blog/ai-logo-generators), [SologoAI](https://www.sologo.ai/blog/how-to-create-a-brand-kit-with-ai/)) — AI is closing the skill gap that would make a client pay a freelancer here, not widening it. Only worth it as a small add-on to the Documents/Presentations service later, not a standalone post.
+- **AI receptionist/voice agents — not built, flagged as a stretch.** Explosive growth (missed calls cost small businesses ~$126k/year on average — [Vellum](https://www.vellum.ai/blog/best-ai-receptionist-for-small-business)), but needs telephony/voice-AI infrastructure (Vapi, Bland AI, Twilio) the user hasn't built with before, unlike the others which reuse proven skill.
+
+Drafted `posts/ai-tools-automation.html`/`.pdf` — same template/theme as the rest of the lineup, 3 pricing tiers (Simple AI Tool from £150, AI Chat Assistant from £250 featured, Workflow Automation custom quote). One important addition not present in other posts: an explicit "AI usage billed separately, at cost — no markup" includes line, since these tools have ongoing API costs that a flat one-time build price can't absorb — flagged in `freelance-operations.md` too. Rendered single-page on the first pass (reused the mobile-desktop-apps template's spacing, which was already known to fit 6 build-cards + 3 price-rows + 6 includes without tightening).
+
 ## Launch plan — WhatsApp posts
 Each post designed as a print-ready one-pager, exported as PDF, converted to an image for WhatsApp by the user. Staggered send (not all in one day to the same group — reads as spam even from a friend).
 
@@ -95,6 +110,7 @@ Planned posts, in send order:
 3. **Custom Software — Mobile & Desktop Apps** — Android/iOS/cross-platform, Windows/Mac desktop.
 4. **Document, Report & Presentation Design** — PPT/report layout and formatting, client supplies content. Framed as a general design service, not tied to academic use.
 5. **AI Content Humanizing** (added 2026-08-31, not in original launch order) — standalone post, business/professional writing only, explicit non-academic scope line on the flyer itself. Send order/whether to send at all not yet decided by user.
+6. **Custom AI Tools & Automation** (added 2026-08-31, not in original launch order) — send order not yet decided by user.
 
 ## Status
 - 2026-08-30: direction opened, service boundary agreed, pricing drafted, post list and send order agreed.
