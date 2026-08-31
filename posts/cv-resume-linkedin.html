@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV / Résumé / LinkedIn — Nagenthiran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a192f;
+    --bg-secondary: #112240;
+    --bg-card: #1d2d50;
+    --accent: #64ffda;
+    --accent-dark: #43d9b6;
+    --text-main: #ccd6f6;
+    --text-dim: #a8b2d1;
+    --font-main: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 210mm; height: 297mm;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  body {
+    font-family: var(--font-main);
+    background: linear-gradient(160deg, var(--bg-primary) 0%, #0d1f38 55%, var(--bg-secondary) 100%);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    padding: 15mm 17mm 13mm;
+    position: relative;
+    overflow: hidden;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: -40mm; right: -45mm;
+    width: 110mm; height: 110mm;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,255,218,0.16) 0%, rgba(100,255,218,0) 70%);
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    bottom: -45mm; left: -40mm;
+    width: 100mm; height: 100mm;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,255,218,0.10) 0%, rgba(100,255,218,0) 70%);
+  }
+
+  .brand { display: flex; flex-direction: column; align-items: center; gap: 9px; text-align: center; z-index: 1; }
+  .brand-name { font-family: var(--font-mono); font-size: 18px; letter-spacing: 1.5px; color: var(--text-main); font-weight: 600; }
+  .brand-name span { color: var(--accent); }
+  .brand-tag { font-family: var(--font-mono); font-size: 11px; color: var(--accent); border: 1px solid rgba(100,255,218,0.45); padding: 5px 12px; border-radius: 20px; letter-spacing: 0.5px; }
+
+  .hero { margin-top: 14mm; z-index: 1; text-align: center; }
+  .hero-eyebrow { font-family: var(--font-mono); font-size: 13px; color: var(--accent); letter-spacing: 2px; margin-bottom: 10px; }
+  .hero h1 { font-size: 36px; line-height: 1.18; font-weight: 800; color: #fff; letter-spacing: -0.5px; max-width: 150mm; margin: 0 auto; }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p { margin: 12px auto 0; font-size: 15px; color: var(--text-dim); line-height: 1.55; max-width: 140mm; }
+
+  .pricing { margin-top: 12mm; z-index: 1; }
+  .pricing-title { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+  .price-row {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    background: rgba(29,45,80,0.65);
+    border: 1px solid rgba(100,255,218,0.18);
+    border-radius: 12px;
+    padding: 13px 18px;
+    margin-bottom: 9px;
+  }
+  .price-row.featured { border-color: var(--accent); background: rgba(100,255,218,0.08); }
+  .price-name { font-size: 16px; font-weight: 600; color: #fff; }
+  .price-sub { font-size: 13px; color: var(--text-dim); margin-top: 3px; }
+  .price-value { font-family: var(--font-mono); font-size: 20px; font-weight: 600; color: var(--accent); white-space: nowrap; margin-top: 7px; }
+  .price-badge {
+    font-family: var(--font-mono); font-size: 10px; color: var(--bg-primary);
+    background: var(--accent); border-radius: 20px; padding: 3px 9px;
+    font-weight: 600; letter-spacing: 0.5px; margin-left: 10px;
+  }
+
+  .includes { margin-top: 12mm; z-index: 1; }
+  .includes-title { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+  .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; max-width: 165mm; margin: 0 auto; }
+  .includes-item { display: flex; align-items: center; justify-content: center; text-align: center; gap: 7px; font-size: 14px; color: var(--text-main); line-height: 1.4; }
+  .includes-item .check { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+  .spacer { flex: 1; min-height: 8mm; }
+
+  .cta {
+    z-index: 1;
+    background: var(--bg-card);
+    border: 1px solid rgba(100,255,218,0.28);
+    border-radius: 16px;
+    padding: 11mm 14mm;
+    text-align: center;
+    margin-top: 8mm;
+  }
+  .cta-title { font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+  .cta-sub { font-size: 13.5px; color: var(--text-dim); margin-bottom: 14px; }
+  .cta-button {
+    display: inline-flex; align-items: center; gap: 9px;
+    background: var(--accent); color: var(--bg-primary);
+    font-weight: 700; font-size: 16px;
+    padding: 13px 26px; border-radius: 30px;
+    font-family: var(--font-main);
+  }
+  .cta-button svg { width: 19px; height: 19px; }
+  .cta-note { margin-top: 12px; font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim); }
+
+  .footer {
+    z-index: 1;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 7mm;
+    font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim);
+  }
+  .footer .dot { color: var(--accent); margin: 0 6px; }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <div class="brand-name">NAGENTHIRAN<span>.</span></div>
+    <div class="brand-tag">TAKING NEW CLIENTS</div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-eyebrow">CV · RÉSUMÉ · LINKEDIN</div>
+    <h1>Get your CV noticed <span class="accent">before it's skipped.</span></h1>
+    <p>Recruiters spend seconds per CV. I write and design CVs, cover letters and LinkedIn profiles that are clean, ATS-friendly, and built around the role you actually want.</p>
+  </div>
+
+  <div class="pricing">
+    <div class="pricing-title">Pricing</div>
+
+    <div class="price-row">
+      <div>
+        <div class="price-name">CV / Résumé Rewrite &amp; Design</div>
+        <div class="price-sub">ATS-friendly format · tailored to your target role</div>
+      </div>
+      <div class="price-value">£15</div>
+    </div>
+
+    <div class="price-row">
+      <div>
+        <div class="price-name">+ Matching Cover Letter</div>
+        <div class="price-sub">Add-on to the CV package</div>
+      </div>
+      <div class="price-value">+£5</div>
+    </div>
+
+    <div class="price-row">
+      <div>
+        <div class="price-name">LinkedIn Profile Optimization</div>
+        <div class="price-sub">Headline, About, experience rewrite</div>
+      </div>
+      <div class="price-value">£10</div>
+    </div>
+
+    <div class="price-row featured">
+      <div>
+        <div class="price-name">Full Bundle <span class="price-badge">SAVE £5</span></div>
+        <div class="price-sub">CV + Cover Letter + LinkedIn, all matching</div>
+      </div>
+      <div class="price-value">£25</div>
+    </div>
+  </div>
+
+  <div class="includes">
+    <div class="includes-title">What's included</div>
+    <div class="includes-grid">
+      <div class="includes-item"><span class="check">✓</span> Quick chat first, so it actually fits your goals</div>
+      <div class="includes-item"><span class="check">✓</span> Clean, modern, recruiter-friendly design</div>
+      <div class="includes-item"><span class="check">✓</span> 2 rounds of free revisions</div>
+      <div class="includes-item"><span class="check">✓</span> Delivered as PDF + editable file</div>
+      <div class="includes-item"><span class="check">✓</span> 2–3 day turnaround</div>
+      <div class="includes-item"><span class="check">✓</span> Intro pricing — early clients</div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="cta">
+    <div class="cta-title">Ready to fix your CV?</div>
+    <div class="cta-sub">Message me on WhatsApp to get started</div>
+    <div class="cta-button">
+      <svg viewBox="0 0 24 24" fill="#0a192f"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38c1.45.79 3.08 1.21 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.94 6.45 17.5 2 12.04 2zm0 18.1h-.01c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.02 8.02 0 01-1.24-4.32c0-4.46 3.63-8.09 8.1-8.09 2.16 0 4.19.84 5.72 2.37a8.03 8.03 0 012.37 5.72c0 4.47-3.63 8.09-8.1 8.09z"/></svg>
+      +94 76 327 5565
+    </div>
+    <div class="cta-note">First replies within a few hours</div>
+  </div>
+
+  <div class="footer">
+    <div>nagenthiran.com</div>
+    <div><span class="dot">●</span>Web · Mobile · Docs</div>
+  </div>
+
+</body>
+</html>
