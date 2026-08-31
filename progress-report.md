@@ -15,7 +15,11 @@ Last updated: 2026-08-31. Minimal-detail dashboard — full reasoning and dated 
 
 Reasoning for the order: open cheapest/lowest-risk/broadest-appeal, let price climb roughly with the credibility each prior send builds, save the most novel/highest-consideration offers for last. Full reasoning in `freelance-monetization.md` → Launch plan.
 
-All 6 flyers drafted, rendered to single-page A4 PDF, visually verified, and converted to PNG (200dpi, via `pdftoppm`) — nothing left to prepare, they're ready to attach and send as-is. One pricing bug was caught and fixed during a consistency pass: the AI Content Humanizing price bundled into the Documents post said "from £60," inconsistent with the standalone post's true £20 floor — corrected on both posts and in the master pricing table before the images were generated, so the images reflect the fixed numbers. None sent to a client yet.
+All 6 flyers drafted, rendered to single-page A4 PDF, visually verified, and converted to PNG (~200dpi) — nothing left to prepare, they're ready to attach and send as-is. Two bugs caught and fixed during review passes, both before any flyer was sent:
+- **Pricing:** the AI Content Humanizing price bundled into the Documents post said "from £60," inconsistent with the standalone post's true £20 floor — corrected on both posts and in the master pricing table.
+- **Centering (2026-08-31, larger fix):** every flyer PDF generated via Chrome's `--print-to-pdf` was silently miscentered — content shrunk to ~82% and left-anchored instead of centered, ~4x more whitespace on the right than the left. Root cause was the print pipeline itself, not the CSS (which was verified genuinely symmetric). Fixed by switching the render pipeline to screenshot-based PNG + PDF-built-from-that-PNG (details in `CLAUDE.md`) and regenerating all 6 PDFs and PNGs. Re-verified via direct pixel measurement, not just by eye.
+
+None sent to a client yet.
 
 ## Pricing snapshot
 
