@@ -6,6 +6,7 @@ Private tracker for freelance/skill-monetization work — pricing, positioning, 
 
 - **`freelance-monetization.md`** — pricing, positioning, the academic-work boundary, and the launch plan/status for every service and post.
 - **`freelance-operations.md`** — the operational playbook: how each service actually gets delivered and maintained over time (hosting, backups, care-plan fulfillment), plus open decisions not yet resolved.
+- **`progress-report.md`** — minimal-detail status dashboard (what's drafted, pricing snapshot, what's blocking the first real client). Check this first for a quick read; the two files above have the full reasoning.
 - **`posts/`** — the WhatsApp launch flyers, each as an A4 HTML source file + rendered PDF, ready to convert to an image and send:
   - `cv-resume-linkedin` — CV/résumé rewrite, LinkedIn optimization, cover letters
   - `websites` — portfolio/business/brand sites, online stores, monthly care plans, domain & hosting setup
