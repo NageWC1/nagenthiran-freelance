@@ -28,7 +28,7 @@ Everything below is fine to promote publicly, on the site or via WhatsApp, no re
 | Slide deck, 11–20 slides | £60 | Repriced 2026-08-31 — see below |
 | Report/document formatting | £35 | Repriced 2026-08-31 — see below |
 | Deck + report bundle (matching style) | £85 | Repriced 2026-08-31 — see below |
-| AI content humanizing / editing | from £60 | New service, added 2026-08-31 — up to 10,000 words, +£5 per extra 1,000 |
+| AI content humanizing / editing | £20–60 | New service, added 2026-08-31 — £20 up to 2,500 words, £60 up to 10,000 words, +£5 per extra 1,000 beyond that |
 | Website Care Plan — Basic | £10/mo | New, added 2026-08-31 — uptime monitoring + automated backups, add-on to any site build |
 | Website Care Plan — Standard | £20/mo | + up to 2 small edits/month |
 | Website Care Plan — Priority | £35/mo | + up to 5 edits/month, 48hr turnaround |
