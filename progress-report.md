@@ -2,18 +2,18 @@
 
 Last updated: 2026-08-31. Minimal-detail dashboard — full reasoning and dated history live in `freelance-monetization.md` (pricing/positioning) and `freelance-operations.md` (delivery mechanics).
 
-## Posts
+## Posts — send order decided 2026-08-31
 
-| Post | Status |
-|---|---|
-| CV / Résumé / LinkedIn | ✅ Drafted — `posts/cv-resume-linkedin.pdf` |
-| Websites (+ Monthly Care Plans, Domain & Hosting Setup add-on) | ✅ Drafted — `posts/websites.pdf` |
-| Mobile & Desktop Apps (+ App Store Submission Handling add-on) | ✅ Drafted — `posts/mobile-desktop-apps.pdf` |
-| Documents & Presentations (+ AI Content Humanizing bundled in) | ✅ Drafted — `posts/documents-presentations.pdf` |
-| AI Content Humanizing (standalone) | ✅ Drafted — `posts/ai-content-humanizing.pdf` |
-| Custom AI Tools & Automation | ✅ Drafted — `posts/ai-tools-automation.pdf` |
+| # | Post | Status |
+|---|---|---|
+| 1 | CV / Résumé / LinkedIn | ✅ Drafted — `posts/cv-resume-linkedin.pdf` |
+| 2 | Websites (+ Monthly Care Plans, Domain & Hosting Setup add-on) | ✅ Drafted — `posts/websites.pdf` |
+| 3 | Documents & Presentations (+ AI Content Humanizing bundled in) | ✅ Drafted — `posts/documents-presentations.pdf` |
+| 4 | Mobile & Desktop Apps (+ App Store Submission Handling add-on) | ✅ Drafted — `posts/mobile-desktop-apps.pdf` |
+| 5 | Custom AI Tools & Automation | ✅ Drafted — `posts/ai-tools-automation.pdf` |
+| 6 | AI Content Humanizing (standalone) — **send more selectively**, not a broad blast | ✅ Drafted — `posts/ai-content-humanizing.pdf` |
 
-All 6 flyers drafted, rendered to single-page A4 PDF, and visually verified. None sent to a client yet.
+Reasoning for the order: open cheapest/lowest-risk/broadest-appeal, let price climb roughly with the credibility each prior send builds, save the most novel/highest-consideration offers for last. Full reasoning in `freelance-monetization.md` → Launch plan. All 6 flyers drafted, rendered to single-page A4 PDF, and visually verified. None sent to a client yet.
 
 ## Pricing snapshot
 
@@ -40,4 +40,4 @@ From `freelance-operations.md`:
 
 ## Next action
 
-User reviews all 6 PDFs, decides send order (including whether/when to send the two newer posts — AI Content Humanizing and Custom AI Tools & Automation, neither in the original 4-post launch plan), and sends the first post(s) to UK WhatsApp groups.
+Send order is decided (see table above). User sends Post 1 (CV/Résumé/LinkedIn) first, staggered from there — not all 6 to the same group in one go.

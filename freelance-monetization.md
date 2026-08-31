@@ -104,13 +104,14 @@ Drafted `posts/ai-tools-automation.html`/`.pdf` — same template/theme as the r
 ## Launch plan — WhatsApp posts
 Each post designed as a print-ready one-pager, exported as PDF, converted to an image for WhatsApp by the user. Staggered send (not all in one day to the same group — reads as spam even from a friend).
 
-Planned posts, in send order:
-1. **CV / Résumé / LinkedIn** — CV writing & redesign, LinkedIn optimization, cover letters.
-2. **Websites** — show range: portfolio, small business, landing pages, booking/appointment sites, blogs, simple online stores (not just portfolio).
-3. **Custom Software — Mobile & Desktop Apps** — Android/iOS/cross-platform, Windows/Mac desktop.
-4. **Document, Report & Presentation Design** — PPT/report layout and formatting, client supplies content. Framed as a general design service, not tied to academic use.
-5. **AI Content Humanizing** (added 2026-08-31, not in original launch order) — standalone post, business/professional writing only, explicit non-academic scope line on the flyer itself. Send order/whether to send at all not yet decided by user.
-6. **Custom AI Tools & Automation** (added 2026-08-31, not in original launch order) — send order not yet decided by user.
+**Send order, decided 2026-08-31** (reordered from the original 4-post plan once 2 more posts were added — reasoning: open with the cheapest/lowest-risk/most universal ask, keep price climbing roughly in step with the credibility built by each prior send, put the most novel/highest-consideration offers last where a track record actually helps them land):
+
+1. **CV / Résumé / LinkedIn** — cheapest (£10–25), lowest-risk ask, most universal need in a student/early-career network. Opens with an easy yes.
+2. **Websites** — broad audience, wide price range (£150 portfolio to £350+ store), natural second step once some initial trust exists.
+3. **Documents & Presentations** — moved ahead of Apps: lower price floor (£35–85), broad appeal (students and professionals both need decks/reports), keeps early momentum before a bigger-ticket ask.
+4. **Custom Software — Mobile & Desktop Apps** — pushed back one slot: higher price floor (£150+), narrower audience (fewer people need an app built than need a CV fixed). Benefits from 3 prior posts' worth of visible track record before asking for that price point.
+5. **Custom AI Tools & Automation** — the most novel, highest-consideration offer ("I'll build you a custom AI tool" needs proof-of-work behind it to land). Sent after 4 posts' worth of credibility is visible.
+6. **AI Content Humanizing** — last, and recommended to send *more selectively* than the other five, not as a blanket send to every group — this is the one post closest to reading as "make my AI essay pass detection" despite the on-flyer disclaimer (see the boundary section above). Target working professionals in the network specifically rather than a broad blast.
 
 ## Status
 - 2026-08-30: direction opened, service boundary agreed, pricing drafted, post list and send order agreed.
