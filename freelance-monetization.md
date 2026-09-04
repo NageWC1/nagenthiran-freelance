@@ -37,6 +37,8 @@ Everything below is fine to promote publicly, on the site or via WhatsApp, no re
 | Simple AI Tool | from £150 | New, added 2026-08-31 — one core AI feature (e.g. generate descriptions, summarize feedback) |
 | AI Chat Assistant | from £250 | Trained on the client's own content, answers customer questions on their site |
 | Workflow Automation (AI) | custom quote | Multi-step (draft, categorize, route), quoted after a scoping call |
+| Social Media Handle — single-platform post | £10 | New, added 2026-09-04 — one platform-ready graphic, client's choice of platform (YouTube thumbnail, Instagram, Facebook, Pinterest, TikTok cover, etc.); 1 free revision, +£3 per extra round |
+| Social Media Handle — 4-platform bundle | £30 | New, added 2026-09-04 — one core design reformatted (not 4 separate designs) to spec for any 4 platforms of the client's choice, ~25% off buying 4 singles; 1 free revision per design, +£3 per extra round |
 
 Payment/currency method for UK→Sri Lanka transfers not yet decided — Wise/Revolut are the obvious candidates, needs a decision before the first real order.
 
@@ -100,6 +102,31 @@ User asked for more AI-related service ideas specifically filtered through "does
 - **AI receptionist/voice agents — not built, flagged as a stretch.** Explosive growth (missed calls cost small businesses ~$126k/year on average — [Vellum](https://www.vellum.ai/blog/best-ai-receptionist-for-small-business)), but needs telephony/voice-AI infrastructure (Vapi, Bland AI, Twilio) the user hasn't built with before, unlike the others which reuse proven skill.
 
 Drafted `posts/ai-tools-automation.html`/`.pdf` — same template/theme as the rest of the lineup, 3 pricing tiers (Simple AI Tool from £150, AI Chat Assistant from £250 featured, Workflow Automation custom quote). One important addition not present in other posts: an explicit "AI usage billed separately, at cost — no markup" includes line, since these tools have ongoing API costs that a flat one-time build price can't absorb — flagged in `freelance-operations.md` too. Rendered single-page on the first pass (reused the mobile-desktop-apps template's spacing, which was already known to fit 6 build-cards + 3 price-rows + 6 includes without tightening).
+
+### Social Media Handle — 2026-09-04 (new service)
+User proposed a new service — designing social media posts for clients — at £10 per single-platform post and £60 for a 4-platform bundle (YouTube, Instagram, Facebook, Pinterest), and asked for the pricing to be pressure-tested against the UK market before committing.
+
+Researched UK and global freelance/marketplace rates:
+- Marketplace floor (Fiverr/Upwork, entry-level): $5–20/post (≈£4–16)
+- Experienced/agency, on-brand posts: $40–150/post (≈£32–120)
+- YouTube thumbnails specifically (Fiverr average): $18 (≈£14) — [Guru](https://www.guru.com/blog/how-much-does-a-thumbnail-cost/)
+- UK professional social graphics: £50–150 — [ManyPixels](https://www.manypixels.co/blog/social-media-design/cost)
+
+£10/post lands right at the global marketplace entry floor — well-calibrated, consistent with the friend-network discount philosophy used everywhere else in this lineup (not accidentally underpriced, since it's still within the floor rather than below it).
+
+The originally proposed £60 bundle was flagged as a problem: at £10–15/post, four platforms bought separately would already cost £40–60, so the bundle offered no actual saving — undermining the reason to buy a bundle at all. **User revised down to £30 for the bundle** (a ~25% discount vs. 4 singles at £10 = £40), which fixes that and still sits above the rock-bottom global floor ($5/post).
+
+Operational note (not yet resolved, flag before real client work starts): to be profitable at £10/post at any volume, this needs a reusable template system — one core design reformatted per platform's spec (YouTube 16:9, Instagram 1:1/4:5, Facebook 1.91:1, Pinterest 2:3) — not four independent from-scratch designs each time. Also, the fixed 4-platform bundle (incl. Pinterest) suits retail/food/craft/home/fashion clients specifically; Pinterest is a weak fit for e.g. trades/local-service clients, so the bundle's platform mix may need to flex per client rather than staying fixed.
+
+Country quotes discussed for future reference if this ever goes cross-border (not the current UK-only launch plan): US ~$15 single / $55 bundle, Australia ~AUD $22 single / $80 bundle (sourced), Canada ~CAD $20 single / $75 bundle (**not directly sourced — extrapolated from USD**, verify before quoting).
+
+Not yet added to a WhatsApp flyer post — pricing agreed, flyer/post design not yet built.
+
+**Revision cap and deliverable definition added 2026-09-04**, after a review flagged two gaps against the rest of the lineup (every other service states a revision limit; this didn't):
+- **Revision cap:** 1 free revision per design, +£3 per additional round. Without this, an unlimited-revision £10 item is an easy way to end up working for free — social posts invite exactly the kind of "make the text bigger / try blue" back-and-forth that erodes a low price fastest.
+- **Deliverable definition:** the 4-platform bundle is explicitly **one core design reformatted to each platform's spec** — not 4 independent designs. Stated up front so a client doesn't reasonably expect 4 different looks for £30.
+
+**Platform choice made flexible, 2026-09-04:** the original 4-platform list (YouTube, Instagram, Facebook, Pinterest) is now client's choice of any 4 — fixes the mismatch flagged during research, where Pinterest is a strong fit for retail/food/craft/home/fashion clients but dead weight for e.g. a tradesperson. Common spec targets: YouTube thumbnail (16:9), Instagram (1:1/4:5), Facebook (1.91:1), Pinterest (2:3), TikTok cover, LinkedIn, X/Twitter — still static-graphic work only, not video editing, regardless of which platforms are chosen.
 
 ## Launch plan — WhatsApp posts
 Each post designed as a print-ready one-pager, exported as PDF, converted to an image for WhatsApp by the user. Staggered send (not all in one day to the same group — reads as spam even from a friend).

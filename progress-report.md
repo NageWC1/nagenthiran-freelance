@@ -34,6 +34,7 @@ All prices are a deliberate, researched discount off beginner-freelancer market 
 | Documents/Slides | £35–85 |
 | AI Content Humanizing | £20–60+ |
 | Custom AI Tools | £150–250+, custom for automations |
+| Social Media Handle | £10/post, £30 for the 4-platform bundle |
 
 ## Open decisions blocking the first real client
 
