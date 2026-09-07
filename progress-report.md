@@ -1,6 +1,10 @@
 # Progress Report
 
-Last updated: 2026-08-31. Minimal-detail dashboard — full reasoning and dated history live in `freelance-monetization.md` (pricing/positioning) and `freelance-operations.md` (delivery mechanics).
+Last updated: 2026-09-07. Minimal-detail dashboard — full reasoning and dated history live in `freelance-monetization.md` (pricing/positioning) and `freelance-operations.md` (delivery mechanics).
+
+## 2026-09-07: all 6 flyers redesigned
+
+Visual theme swapped from the old dark navy/teal to the light white/blue theme matching the redesigned `nagenthiran-portfolio` site, plus a new reassurance line on every flyer aimed at reducing hesitation to message ("you don't need a plan/full spec/polished draft — just message me"). All 6 re-rendered, verified, and unchanged in pricing/scope. Full detail in `freelance-monetization.md`'s 2026-09-07 status entry.
 
 ## Posts — send order decided 2026-08-31, ready to send
 
